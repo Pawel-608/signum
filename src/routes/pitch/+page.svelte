@@ -100,8 +100,8 @@
 		title="Everyone covers a slice. Nobody covers it all."
 	>
 		{#snippet visual()}
-			<div class="hidden lg:block bg-bg-surface border border-border-subtle rounded-xl p-4 overflow-hidden">
-				<div class="flex justify-end gap-4 mb-2 font-mono text-[0.65rem] text-text-muted">
+			<div class="hidden lg:block bg-bg-surface border border-border-subtle rounded-xl p-5 overflow-hidden">
+				<div class="flex justify-end gap-5 mb-3 font-mono text-xs text-text-muted">
 					<span><span class="text-status-success">&#9679;</span> Covered</span>
 					<span><span class="text-status-warning">&#9675;</span> Partial</span>
 					<span><span class="text-border-default">&#8212;</span> None</span>
@@ -109,15 +109,15 @@
 				<table class="w-full font-mono border-collapse" style="border-spacing: 0;">
 					<thead>
 						<tr>
-							<th class="text-left py-1.5 px-3 text-[0.7rem] text-text-secondary font-semibold border-b-2 border-border-default"></th>
-							<th class="text-center py-1.5 px-1 text-[0.6rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">SC</th>
-							<th class="text-center py-1.5 px-1 text-[0.6rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Econ</th>
-							<th class="text-center py-1.5 px-1 text-[0.6rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Ops</th>
-							<th class="text-center py-1.5 px-1 text-[0.6rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Gov</th>
-							<th class="text-center py-1.5 px-1 text-[0.6rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Cpty</th>
-							<th class="text-center py-1.5 px-1 text-[0.6rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Reg</th>
-							<th class="text-center py-1.5 px-1 text-[0.6rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Rep</th>
-							<th class="text-center py-1.5 px-1 text-[0.6rem] text-accent font-bold tracking-wide uppercase border-b-2 border-border-default">SOL</th>
+							<th class="text-left py-2.5 px-3 text-sm text-text-secondary font-semibold border-b-2 border-border-default"></th>
+							<th class="text-center py-2.5 px-2 text-[0.7rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">SC</th>
+							<th class="text-center py-2.5 px-2 text-[0.7rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Econ</th>
+							<th class="text-center py-2.5 px-2 text-[0.7rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Ops</th>
+							<th class="text-center py-2.5 px-2 text-[0.7rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Gov</th>
+							<th class="text-center py-2.5 px-2 text-[0.7rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Cpty</th>
+							<th class="text-center py-2.5 px-2 text-[0.7rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Reg</th>
+							<th class="text-center py-2.5 px-2 text-[0.7rem] text-text-muted font-semibold tracking-wide uppercase border-b-2 border-border-default">Rep</th>
+							<th class="text-center py-2.5 px-2 text-[0.7rem] text-accent font-bold tracking-wide uppercase border-b-2 border-border-default">SOL</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -130,9 +130,9 @@
 							{ name: 'STRIDE', cols: ['1', '0', '1', '~', '0', '0', '0', '1'] },
 						] as row}
 							<tr class="border-b border-border-subtle">
-								<td class="py-2 px-3 text-[0.7rem] text-text-secondary font-medium">{row.name}</td>
+								<td class="py-2.5 px-3 text-sm text-text-secondary font-medium">{row.name}</td>
 								{#each row.cols as c}
-									<td class="text-center py-2 px-1 text-[0.75rem]">
+									<td class="text-center py-2.5 px-2 text-base">
 										{#if c === '1'}
 											<span class="text-status-success">&#9679;</span>
 										{:else if c === '~'}
@@ -145,9 +145,9 @@
 							</tr>
 						{/each}
 						<tr class="border-t-2 border-accent/30">
-							<td class="py-2 px-3 text-[0.7rem] font-bold text-accent">Signum</td>
+							<td class="py-2.5 px-3 text-sm font-bold text-accent">Signum</td>
 							{#each Array(8) as _}
-								<td class="text-center py-2 px-1 text-[0.75rem] text-status-success font-bold">&#9679;</td>
+								<td class="text-center py-2.5 px-2 text-base text-status-success font-bold">&#9679;</td>
 							{/each}
 						</tr>
 					</tbody>

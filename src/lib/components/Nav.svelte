@@ -33,5 +33,11 @@
 				{label}
 			</a>
 		{/each}
+		<a
+			href="/pitch"
+			class="font-mono text-[0.7rem] tracking-[0.04em] no-underline text-accent hover:text-accent-hover transition-colors duration-300"
+		>
+			Deck &rarr;
+		</a>
 	</div>
 </nav>
