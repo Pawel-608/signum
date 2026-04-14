@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-sans: 'Urbanist', 'Inter', -apple-system, sans-serif;
+	--font-mono: 'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', monospace;
+	--font-display: 'Syne', 'Urbanist', sans-serif;
+	--font-serif: 'DM Serif Text', Georgia, serif;
+
+	--color-bg-primary: #f2f1ec;
+	--color-bg-surface: #faf9f6;
+	--color-bg-surface-hover: #f0efeb;
+	--color-bg-elevated: #e8e7e3;
+
+	--color-border-subtle: #e0dfdb;
+	--color-border-default: #cccbc6;
+
+	--color-text-primary: #111111;
+	--color-text-secondary: #555555;
+	--color-text-muted: #999999;
+
+	--color-accent: #0f766e;
+	--color-accent-hover: #0d665f;
+	--color-accent-dim: rgba(15, 118, 110, 0.08);
+
+	--color-sol-green: #059669;
+	--color-sol-green-dim: rgba(5, 150, 105, 0.08);
+
+	--color-status-success: #059669;
+	--color-status-success-bg: rgba(5, 150, 105, 0.08);
+	--color-status-error: #dc2626;
+	--color-status-error-bg: rgba(220, 38, 38, 0.08);
+	--color-status-warning: #d97706;
+	--color-status-warning-bg: rgba(217, 119, 6, 0.08);
+	--color-status-info: #2563eb;
+	--color-status-info-bg: rgba(37, 99, 235, 0.08);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--color-bg-primary);
+	color: var(--color-text-primary);
+	font-family: var(--font-sans);
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+/* ─── Reveal animations ─────────────── */
+@keyframes fadeUp {
+	from { opacity: 0; transform: translateY(24px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes lineGrow {
+	from { transform: scaleX(0); }
+	to { transform: scaleX(1); }
+}
+
+@keyframes pulse-dot {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.4; }
+}
+
+.reveal {
+	opacity: 0;
+	transform: translateY(24px);
+	animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.reveal-d1 { animation-delay: 0.1s; }
+.reveal-d2 { animation-delay: 0.2s; }
+.reveal-d3 { animation-delay: 0.35s; }
+.reveal-d4 { animation-delay: 0.5s; }
+.reveal-d5 { animation-delay: 0.65s; }
+.reveal-d6 { animation-delay: 0.8s; }
