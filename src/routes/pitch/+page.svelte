@@ -23,7 +23,7 @@
 
 {#snippet titleSlide()}
 	<SlideLayout
-		eyebrow="Colosseum Eternal Hackathon — 2026"
+		eyebrow="Colosseum Frontier Hackathon — 2026"
 		title="Signum"
 		titleSize="hero"
 		subtitle="Institutional-grade risk infrastructure for Solana DeFi"
